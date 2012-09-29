@@ -1,25 +1,18 @@
 // FLowercase.h: interface for the FLowercase class.
-//
+//	Matthew Luchette CPSC 430
 //////////////////////////////////////////////////////////////////////
-
 #include "IFilter.h"
-//#include "FilterMgr.h"
 
 #if !defined FLOWERCASE_CLASS
 #define FLOWERCASE_CLASS
 
-
-
 class FLowercase : public IFilter
 {
 	public:
-		FLowercase();
+		//Implements interface IFilter.
 		virtual void execute(std::string);
+		FLowercase();
 		virtual ~FLowercase();
-
-	private:
-	
-
 };
 
 #endif // !defined FLOWERCASE_CLASS

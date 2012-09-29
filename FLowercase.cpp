@@ -1,11 +1,8 @@
 // FLowercase.cpp: implementation of the FLowercase class.
-//
+//	Matthew Luchette CPSC 430
 //////////////////////////////////////////////////////////////////////
-
-
 #include <iostream>
 #include "FLowercase.h"
-
 
 using namespace std;
 
@@ -23,11 +20,14 @@ FLowercase::~FLowercase()
 
 }
 
+//////////////////////////////////////////////////////////////////////
+// IFilter's execute function definition for Lowercase Filter
+//////////////////////////////////////////////////////////////////////
 void FLowercase::execute(string word)
 {
-	for(unsigned i = 0; i< word.size(); i++)
+	for(unsigned i = 0; i< word.length(); i++)
 	{
-		word.replace(i, 1, 1, tolower(word[i]));
+		word[i] = tolower(word[i]);
 	}
+	cout << word;
 }
-
