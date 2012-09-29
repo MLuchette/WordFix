@@ -26,7 +26,7 @@ int main() {
 		//If the filter name is not one of the available filters, the user gets the prompt again 
 		while(filter == NULL)
 		{
-			cout << "Please choose a valid option:\n" << filterManager.getChoices() << endl;
+			cout << "\nPlease choose a valid option:\n" << filterManager.getChoices();
 			cin >> filterChoice;
 			filter = filterManager.selectFilter(filterChoice);
 		}
