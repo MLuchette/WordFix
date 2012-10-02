@@ -50,7 +50,7 @@ IFilter* FilterMgr::selectFilter(string choice)
 	}
 	else if(choice == "q")
 	{
-		exit(1);
+		return NULL;
 	}
 	else
 	{

@@ -12,6 +12,7 @@ class IFilter
 	public:
 		//Has method execute, which takes a string argument and returns nothing.
 		virtual void execute(std::string) = 0;
+		virtual ~IFilter() { };
 };
 
 #endif // !defined IFILTER_CLASS
